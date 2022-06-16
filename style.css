@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Alegreya Sans', sans-serif; */
+    font-family: 'Fredoka One', cursive;
+    background-image: conic-gradient(at 125% 50%, #b78cf7, #ff7c94,#fec7d7 , #ff7c94, #b78cf7);
+    height: 100vh;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.nav h2{
+    font-size: 2rem;
+}
+
+i{
+    color: #fec7d7;
+}
+
+.userInputBox{
+    width: 350px;
+    text-align: center;
+}
+
+.userInputBox input{
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    font-family: 'Alegreya Sans', sans-serif;
+    border: 1px solid lightpink;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.userInputBox input:focus{
+    box-shadow: 0 0 5px black;
+    border: 2px solid black;
+}
+
+.userInputBox button{
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    background-color: #fec7d7;
+    border: 2px solid #fec7d7;
+    transition: 1s;
+    outline: none;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.userInputBox button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.todoItems{
+    width: 500px;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    background-color: #fec7d7;
+    padding: 16px;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.item:hover{
+    box-shadow: 0 0 20px black;
+    border: 2px solid black;
+}
+
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .nav{
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav h2{
+        margin: 10px 0;
+    }
+    .userInputBox{
+        width: 100%;
+    }
+    .todoItems{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .userInputBox input{
+        width: 70%;
+    }
+}
